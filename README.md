@@ -68,3 +68,21 @@ docker run -d \
     --net host \
     defunctzombie/localtunnel-server:latest --port 3000
 ```
+
+
+## AIS
+
+### Test locally
+
+1. run server
+```
+node -r esm ./bin/server --port 9000
+```
+or debug via launch.json from code 
+
+
+2. go to client and run it
+
+```
+./bin/lt.js -h http://localhost:9000 -p 8180 -s dom-test
+```
